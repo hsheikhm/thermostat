@@ -8,10 +8,11 @@ main {
 
 header, footer {
   padding: 20px;
-  background-color: rgba(255,0,255, 0.01);
-  box-shadow: -1px 0 5px rgba(0,0,0, 0.3);
+  background-color: #212121;
   text-align: center;
-  height: 20px;
+  color: white;
+  font: 400 1em/1.38 'Lato', sans-serif;
+  letter-spacing: 2px;
 }
 
 section {
@@ -30,7 +31,7 @@ section {
 
 .climate_bg {
   position: relative;
-  top: -152px;
+  top: -87px;
   left: 235px;
   z-index: 6;
   width: 163px;
@@ -78,7 +79,7 @@ section {
 }
 
 .not-available, .failed {
-  position: absolute;
+  position: relative;
   top: 464px;
   left: 0;
   right: 0;
@@ -105,7 +106,7 @@ section {
 
 .info_bg {
   position: relative;
-  top: -152px;
+  top: -87px;
   left: 235px;
   z-index: 4;
   width: 163px;
@@ -117,7 +118,7 @@ section {
 .location {
   position: relative;
   top: 128px;
-  left: 78px;
+  left: 52px;
   z-index: 8;
   width: 108px;
   min-height: 59px;
@@ -131,7 +132,7 @@ section {
 .temperature {
   position: relative;
   top: -25px;
-  left: 72px;
+  left: 48px;
   z-index: 7;
   width: 109px;
   min-height: 28px;
@@ -173,16 +174,16 @@ section {
 }
 
 .row {
-  position: absolute;
-  top: 230px;
-  left: 109px;
+  position: relative;
+  top: -65px;
+  left: 14px;
 }
 
 #weather-section {
   position: relative;
   float: right;
-  margin-right: 203px;
-  margin-top: 200px;
+  margin-right: 114px;
+  margin-top: 137px;
 }
 
 #current-temp {
@@ -199,43 +200,43 @@ section {
   margin: 0 auto;
   float: left;
   position: absolute;
-  bottom: 224px;
-  left: 173px;
+  bottom: 132px;
+  left: 175px;
 }
 
 #add-button {
   position: relative;
-  top: 125px;
+  top: 55px;
   left: 161px;
 }
 
 #remove-button {
   position: relative;
-  top: 151px;
+  top: 80px;
   left: 161px;
 }
 
 #refresh-button {
   position: relative;
-  top: 180px;
+  top: 115px;
   left: 161px;
 }
 
 #power-button {
   position: relative;
-  top: 207px;
+  top: 150px;
   left: 161px;
 }
 
 
 .btn-floating {
-  width: 107px !important;
-  height: 100px !important;
+  width: 90px !important;
+  height: 90px !important;
 }
 
 .material-icons {
   text-align: center;
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
 
