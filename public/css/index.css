@@ -30,8 +30,8 @@ section {
 }
 
 .climate_bg {
-  position: relative;
-  top: -87px;
+  position: absolute;
+  top: 0px;
   left: 235px;
   z-index: 6;
   width: 163px;
@@ -42,7 +42,7 @@ section {
 
 .weathericon {
   display: block;
-  position: relative;
+  position: absolute;
   top: -5px;
   left: 1.226993865%;
   z-index: 5;
@@ -52,7 +52,7 @@ section {
 }
 
 .container {
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -69,7 +69,7 @@ section {
 
 .dropicon {
   display: block;
-  position: relative;
+  position: absolute;
   top: 9px;
   left: -3.9110429448%;
   z-index: 3;
@@ -79,7 +79,7 @@ section {
 }
 
 .not-available, .failed {
-  position: relative;
+  position: absolute;
   top: 464px;
   left: 0;
   right: 0;
@@ -92,8 +92,8 @@ section {
 }
 
 .humidity {
-  position: relative;
-  top: -23px;
+  position: absolute;
+  top: 18px;
   left: 29px;
   z-index: 2;
   width: 46px;
@@ -105,8 +105,8 @@ section {
 }
 
 .info_bg {
-  position: relative;
-  top: -87px;
+  position: absolute;
+  top: 149px;
   left: 235px;
   z-index: 4;
   width: 163px;
@@ -116,9 +116,9 @@ section {
 }
 
 .location {
-  position: relative;
+  position: absolute;
   top: 128px;
-  left: 52px;
+  left: 62px;
   z-index: 8;
   width: 108px;
   min-height: 59px;
@@ -130,9 +130,9 @@ section {
 }
 
 .temperature {
-  position: relative;
-  top: -25px;
-  left: 48px;
+  position: absolute;
+  top: 35px;
+  left: 65px;
   z-index: 7;
   width: 109px;
   min-height: 28px;
@@ -144,8 +144,8 @@ section {
 
 .windicon {
   display: block;
-  position: relative;
-  top: -62px;
+  position: absolute;
+  top: 4px;
   left: 42.117331%;
   z-index: 1;
   width: 50px;
@@ -154,8 +154,8 @@ section {
 }
 
 .windspeed {
-  position: relative;
-  top: -108px;
+  position: absolute;
+  top: 8px;
   left: 109px;
   width: 50px;
   min-height: 29px;
@@ -175,15 +175,15 @@ section {
 
 .row {
   position: relative;
-  top: -65px;
+  top: 225px;
   left: 14px;
 }
 
 #weather-section {
   position: relative;
   float: right;
-  margin-right: 114px;
-  margin-top: 137px;
+  margin-right: 520px;
+  margin-top: 230px;
 }
 
 #current-temp {
@@ -228,7 +228,6 @@ section {
   left: 161px;
 }
 
-
 .btn-floating {
   width: 90px !important;
   height: 90px !important;
@@ -238,22 +237,3 @@ section {
   text-align: center;
   margin-top: 20px;
 }
-
-
-
-
-/*#diagonal-line {
-  position: relative;
-  width: 500px;
-  height: 47px;
-  border-bottom: 1px solid white;
-  -webkit-transform:
-          translateY(10px)
-          translateX(5px)
-          rotate(-45deg);
-  margin-left: 400px;
-  margin-top: 100px;
-
-  top: -33px;
-  left: -13px;*
-}*/
