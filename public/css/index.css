@@ -1,7 +1,27 @@
-  body {
+main {
   background-color: #bebebe;
-  font: 400 1em/1.38 Montserrat;
+  background-image: url(../images/brushed_alu_dark.png);
+  font: 400 1em/1.38 'Lato', sans-serif;
   color: #ffffff;
+  flex: 1;
+}
+
+header, footer {
+  padding: 20px;
+  background-color: rgba(255,0,255, 0.01);
+  box-shadow: -1px 0 5px rgba(0,0,0, 0.3);
+  text-align: center;
+  height: 20px;
+}
+
+section {
+  height: 10px;
+}
+
+.wrapper {
+  height:100vh;
+  display:flex;
+  flex-direction: column;
 }
 
 .info_bg p {
@@ -9,8 +29,8 @@
 }
 
 .climate_bg {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -152px;
   left: 235px;
   z-index: 6;
   width: 163px;
@@ -21,7 +41,7 @@
 
 .weathericon {
   display: block;
-  position: absolute;
+  position: relative;
   top: -5px;
   left: 1.226993865%;
   z-index: 5;
@@ -31,7 +51,7 @@
 }
 
 .container {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -48,7 +68,7 @@
 
 .dropicon {
   display: block;
-  position: absolute;
+  position: relative;
   top: 9px;
   left: -3.9110429448%;
   z-index: 3;
@@ -71,8 +91,8 @@
 }
 
 .humidity {
-  position: absolute;
-  top: 19px;
+  position: relative;
+  top: -23px;
   left: 29px;
   z-index: 2;
   width: 46px;
@@ -84,8 +104,8 @@
 }
 
 .info_bg {
-  position: absolute;
-  top: 149px;
+  position: relative;
+  top: -152px;
   left: 235px;
   z-index: 4;
   width: 163px;
@@ -95,9 +115,9 @@
 }
 
 .location {
-  position: absolute;
+  position: relative;
   top: 128px;
-  left: 63px;
+  left: 78px;
   z-index: 8;
   width: 108px;
   min-height: 59px;
@@ -109,8 +129,8 @@
 }
 
 .temperature {
-  position: absolute;
-  top: 38px;
+  position: relative;
+  top: -25px;
   left: 72px;
   z-index: 7;
   width: 109px;
@@ -123,9 +143,9 @@
 
 .windicon {
   display: block;
-  position: absolute;
-  top: 5px;
-  left: 43.1173312883%;
+  position: relative;
+  top: -62px;
+  left: 42.117331%;
   z-index: 1;
   width: 50px;
   height: auto;
@@ -133,8 +153,8 @@
 }
 
 .windspeed {
-  position: absolute;
-  top: 9px;
+  position: relative;
+  top: -108px;
   left: 109px;
   width: 50px;
   min-height: 29px;
@@ -149,5 +169,90 @@
 }
 
 .input-group {
-  color: black;
+  color: white;
 }
+
+.row {
+  position: absolute;
+  top: 230px;
+  left: 109px;
+}
+
+#weather-section {
+  position: relative;
+  float: right;
+  margin-right: 203px;
+  margin-top: 200px;
+}
+
+#current-temp {
+  font-size: 350px;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  top: 3px;
+  left: 79px;
+}
+
+#power-saving-mode {
+  font-size: 56px;
+  margin: 0 auto;
+  float: left;
+  position: absolute;
+  bottom: 224px;
+  left: 173px;
+}
+
+#add-button {
+  position: relative;
+  top: 125px;
+  left: 161px;
+}
+
+#remove-button {
+  position: relative;
+  top: 151px;
+  left: 161px;
+}
+
+#refresh-button {
+  position: relative;
+  top: 180px;
+  left: 161px;
+}
+
+#power-button {
+  position: relative;
+  top: 207px;
+  left: 161px;
+}
+
+
+.btn-floating {
+  width: 107px !important;
+  height: 100px !important;
+}
+
+.material-icons {
+  text-align: center;
+  margin-top: 23px;
+}
+
+
+
+
+/*#diagonal-line {
+  position: relative;
+  width: 500px;
+  height: 47px;
+  border-bottom: 1px solid white;
+  -webkit-transform:
+          translateY(10px)
+          translateX(5px)
+          rotate(-45deg);
+  margin-left: 400px;
+  margin-top: 100px;
+
+  top: -33px;
+  left: -13px;*
+}*/

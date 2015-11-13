@@ -4,28 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
     <title>Thermostat</title>
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../public/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="../public/css/standardize.css">
     <link rel="stylesheet" href="../public/css/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
-    <script src="../public/javascript/Weather.js"></script>
-    <script src="../public/javascript/Thermostat.js"></script>
-    <script src="../public/javascript/application.js"></script>
   </head>
 
   <body class="body page-index clearfix">
+    <div class="wrapper">
+    <header>
+      My Thermostat
+    </header>
+
+    <main>
 
     <section>
-      <p>Current Temperature: <span id="current-temp"></span></p>
-      <p>Power Saving Mode: <span id="psm"></span></p>
-      <button id="up-temp">+</button>
-      <button id="down-temp">-</button>
-      <button id="reset-temp">Reset</button>
-      <button id="power-switch">Power Switch</button>
-      <span id="test"></span>
+      <span id="current-temp"></span>
+      <p id="power-saving-mode">PSM: <span id="psm"></span></p>
+      <div id="add-button">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="large material-icons" id="up-temp">add</i></a>
+      </div>
+      <div id="remove-button">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="large material-icons" id="down-temp">remove</i></a>
+      </div>
+      <div id="refresh-button">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="large material-icons" id="reset-temp">refresh</i></a>
+      </div>
+      <div id="power-button">
+        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="large material-icons" id="power-switch">power_settings_new</i></a>
+      </div>
     </section>
 
+    <div id="diagonal-line"></div>
+
+    <div id="weather-section">
     <div class="container clearfix">
       <p class="location"></p>
       <p class="temperature"></p>
@@ -36,16 +49,30 @@
         <img class="windicon" src="../public/images/Wind.svg">
         <div class="windspeed"></div>
       </div>
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" id="my-address" placeholder="Enter location...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" id="getCords" onClick="codeAddress();">Go!</button>
+              </span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-md-offset-3 col-md-6">
-    		<div class="input-group">
-    			<input type="text" class="form-control" id="my-address" placeholder="Enter location...">
-    				<span class="input-group-btn">
-    					<button class="btn btn-default" id="getCords" onClick="codeAddress();">Go!</button>
-    				</span>
-    		</div>
-    	</div>
-    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+    <script src="../public/javascript/Weather.js"></script>
+    <script src="../public/javascript/Thermostat.js"></script>
+    <script src="../public/javascript/application.js"></script>
+    <script src="../public/javascript/materialize.min.js"></script>
+
+      </main>
+
+    <footer>Hamza Sheikh</footer>
+  </div>
+
   </body>
 </html>
