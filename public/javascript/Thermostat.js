@@ -6,7 +6,7 @@ function Thermostat() {
   this.MIN_TEMPERATURE = 10;
   this.currentTemp = this.DEFAULT_TEMPERATURE;
   this.powerSaving = "ON";
-  this.colorDisplay = "Yellow";
+  this.colorDisplay = "#fff59d";
 }
 
 Thermostat.prototype.upTemp = function() {
@@ -27,11 +27,11 @@ Thermostat.prototype.powerSavingSwitch = function() {
 };
 
 Thermostat.prototype.colorDisplayCheck = function() {
-  if (this.currentTemp < 18) {this.colorDisplay = "Green";
+  if (this.currentTemp < 18) {this.colorDisplay = "#66bb6a";
   }
-  else if (this.currentTemp > 25) {this.colorDisplay = "Red";
+  else if (this.currentTemp > 25) {this.colorDisplay = "#ef9a9a";
   }
-  else {this.colorDisplay = "Yellow";}
+  else {this.colorDisplay = "#fff59d";}
 };
 
 Thermostat.prototype.resetTemp = function() {

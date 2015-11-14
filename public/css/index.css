@@ -118,7 +118,7 @@ section {
 .location {
   position: absolute;
   top: 128px;
-  left: 62px;
+  left: 42px;
   z-index: 8;
   width: 108px;
   min-height: 59px;
@@ -132,7 +132,7 @@ section {
 .temperature {
   position: absolute;
   top: 35px;
-  left: 65px;
+  left: 42px;
   z-index: 7;
   width: 109px;
   min-height: 28px;
